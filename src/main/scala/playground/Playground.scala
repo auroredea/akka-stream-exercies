@@ -8,5 +8,5 @@ object Playground extends App {
   implicit val actorSystem = ActorSystem("Playground")
   implicit val materializer = ActorMaterializer
 
-  Source.single("heelo, streams!").to(Sink.foreach(println)).run()
+  Source.single("hello, streams!").to(Sink.foreach(println)).run()
 }
